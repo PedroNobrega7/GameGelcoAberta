@@ -1,0 +1,13 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>TECH TITANS</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body><main class="shell"><header><div class="brand"><span class="brand-icon">⌘</span><div><b>TECH TITANS</b></div></div></header>
+<section class="game-wrap"><canvas tabindex="-1" id="game" width="960" height="540" aria-label="Jogo Tech Titans"></canvas>
+<div id="overlay" class="overlay"><div class="panel"><div class="eyebrow"></div><h1>TECH <em>TITANS</em></h1><p class="lead"></p><div class="menu" id="menu"></div><div class="hint">↑ ↓ escolher <span>•</span> ENTER confirmar</div></div></div>
+<aside id="ranking" class="ranking" aria-label="Ranking de pontuação"><h2>🏆 TOP 3</h2><ol id="rankingList"></ol><small>Melhor pontuação por apelido</small></aside><div class="hud hidden" id="hud"><div class="hud-left"><div class="portrait" id="portrait">B</div><div><b id="heroName">BUENO</b><div class="hearts" id="hearts"></div></div></div><div class="score-display">PONTOS <b id="scoreValue">0</b></div><div class="level-label" id="levelLabel">FASE 1-1 · SALA DE SUPORTE</div><div class="special"><div class="special-title"><span>ESPECIAL</span><b id="specialText">0/7 HITS</b></div><div class="meter"><i id="specialMeter"></i></div></div></div>
+<div class="boss-hud hidden" id="bossHud"><div class="boss-name" id="bossName">BOSS</div><div class="boss-meter"><i id="bossMeter"></i></div><small id="bossHp">100 / 100</small></div>
+<div class="toast hidden" id="toast"></div><div class="pause hidden" id="pause" role="dialog" aria-modal="true" aria-labelledby="pauseTitle"><div class="pause-panel"><h2 id="pauseTitle">PAUSADO</h2><div class="menu" id="pauseMenu"><button type="button">CONTINUAR</button><button type="button">REINICIAR FASE</button><button type="button">VOLTAR AO MENU</button></div><p>↑ ↓ escolher · ENTER confirmar · ESC continuar</p></div></div>
+</section><footer><span id="movementHint">← → MOVER &nbsp; ↑ PULAR &nbsp; ↓ AGACHAR</span><span><kbd>Z</kbd> ATAQUE &nbsp; <kbd>X</kbd> ESPECIAL &nbsp; <kbd>ESC</kbd> PAUSA</span></footer></main><script src="game.js"></script></body></html>
